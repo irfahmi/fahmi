@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button[type=btn] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type=btn]:hover {
+  background-color: #45a049;
+}
+
+    </style>
+<head>
+  <title>Form Pesanan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br>
+<div class="container">
+  <h2>Form Pemesanan Barang</h2>
+  
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Tambah Pesanan</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">silahkan isi form pemesanan di bawah ini</h4>
+          </div>
+          <div class="modal-body">
+            <label for="usr">Nama Pemesan:</label>
+            <input type="text" class="form-control" id="usr">
+            <label for="usr">Alamat Email:</label>
+            <input type="text" class="form-control" id="usr">
+            <label for="usr">Alamat Penerima</label>
+            <textarea type="text" class="form-control" id="usr"></textarea>
+            
+            <label for="buku">Jenis Buku</label>
+            
+            <select id="buku" name="buku" >
+              <option value="CSS">CSS</option>
+              <option value="JAVA">JAVA</option>
+              <option value="PHP">PHP</option>
+              <option value="REACT">ReactJS</option>
+              <option value="LARAVEL">Laravel</option>
+            </select>
+        <br>
+          </div>
+          <div class="modal-footer">
+            <button type="btn" class="btn btn-default" onclick = "myFunction()" data-dismiss="modal">Kirim</button>
+            
+
+<script>
+function myFunction() {
+  alert("data sudah dikirim!");
+}
+</script>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+</div>
+
+</body>
+</html>
